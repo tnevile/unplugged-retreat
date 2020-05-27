@@ -97,6 +97,186 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/**BASE STYLES**/
+html {
+
+}
+
+body {
+
+}
+
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+/**HEADER**/
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header img {
+
+}
+
+.header-divider {
+
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  display: flex;
+  align-items: space-around;
+}
+
+header nav ul li {
+
+}
+
+/**Aside**/
+aside {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.form-description {
+
+}
+
+.form {
+
+}
+
+/**Main - Home Page**/
+main.content-wrapper {
+
+}
+
+.hero-area {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features .features-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.fontawesome-icon {
+
+}
+
+.features-item-description {
+
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.review-item {
+
+}
+
+/**Main - About Page**/
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.mission-content {
+
+}
+
+.map {
+
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-content {
+
+}
+
+/**FAQ Page**/
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper {
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/**Footer**/
+
+footer .content-wrapper {
+
+}
+
+.footer-content {
+
+}
+
+.contact {
+
+}
+
+.social {
+
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+
+}
 
 /* ==========================================================================
    Helper classes
@@ -262,4 +442,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
