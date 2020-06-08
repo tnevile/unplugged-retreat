@@ -147,6 +147,15 @@ address {
   margin: 50px 0;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
 /* -------------------- Base Header - Footer Styles -------------------- */
 header,
 footer {
@@ -191,6 +200,8 @@ header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin: 0;
+  padding: 0;
 }
 
 header nav ul li {
@@ -235,6 +246,9 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url('../img/hero.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -245,6 +259,7 @@ footer .copyright {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
+  margin-top: 0;
 }
 
 
@@ -255,6 +270,18 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+aside .content-wrapper {
+  margin: 20px 0;
+}
+
+aside h3 {
+  margin-top: 0;
+}
+
+aside p {
+  margin: 0;
 }
 
 aside .form{
@@ -287,13 +314,15 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('../img/features-background.jpg') center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
 .features h2 {
-  margin-bottom: 60px;
+  margin: 0 0 60px;
 }
 
 .features article {
@@ -323,7 +352,7 @@ input[type=button] {
 }
 
 .reviews h2 {
-  margin-bottom: 40px;
+  margin: 0 0 40px;
   line-height: 1;
 }
 .reviews h3 {
@@ -571,6 +600,9 @@ h3 {
    width: 85%;
  }
 
+.reviews article figure {
+  width: 49%;
+}
  .reviews article div {
    width: 49%;
  }
@@ -659,12 +691,15 @@ h3 {
 /*End Table Styles*/
 
 /*Start Desktop Styles*/
-@media only screen and (mid-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 
   header {
     padding: 15px 0;
   }
 
+header figure {
+  width: 35%;
+}
   .content-wrapper {
     max-width: 960px;
   }
@@ -684,9 +719,12 @@ h3 {
   }
 
   /* Hero */
+    .hero-area .content-wrapper {
+      margin-top: 20px;
+    }
     .hero-area h1 {
         font-size: 3.75em;
-        width: 60%;
+        width: 75%;
     }
 
     /* Aside */
@@ -714,11 +752,15 @@ h3 {
 
     /* Reviews */
     .reviews h2 {
-      padding-bottom: 50px;
+      padding-bottom: 20px;
+    }
+
+    .reviews article figure {
+      width: 49%;
     }
 
     .reviews article div {
-      width: 42%;
+      width: 49%;
     }
 
     footer h4 {
@@ -752,7 +794,7 @@ h3 {
        line-height: 1;
    }
  }
- 
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
